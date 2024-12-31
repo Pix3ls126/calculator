@@ -1,0 +1,70 @@
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    grid-template-rows: repeat(5, 1fr); /* 5 equal-height rows */
+    gap: 5px;
+    padding: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px #ccc;
+    transition: all 0.3s ease;
+    height: 70px; /* Ensure consistent button height */
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+button:active {
+    box-shadow: 0 1px #aaa;
+    transform: translateY(2px);
+}
+
+/* Special buttons */
+.special {
+    background-color: #f66;
+    color: white;
+}
+
+#equals {
+    background-color: #66f;
+    color: white;
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #f9c74f;
+    color: white;
+}
+
+/* Digit and Decimal buttons */
+.digit, .decimal {
+    background-color: #ffffff;
+}
+
+#calculator {
+    width: 300px; /* Set calculator width to make it compact */
+    margin: auto; /* Center the calculator horizontally */
+    background-color: #f8f8f8;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    grid-column: span 4; /* Make display span all columns */
+    background-color: #f8f9fa;
+    font-size: 2rem;
+    color: #333;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
